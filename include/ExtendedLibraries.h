@@ -34,7 +34,7 @@ void sleep(int duration) {
 /// <typeparam name="...Args"></typeparam>
 /// <param name="function - Function to be measured"></param>
 /// <param name="...args - Arguments passed to the function"></param>
-/// <returns>Returns a count (long long) or how long the function took</returns>
+/// <returns>Returns a count (long long) of how long the function took</returns>
 template<typename returnType, typename ...Args>
 long long getExecutionTime(returnType (*function)(Args...), Args ...args) {
     auto start = std::chrono::high_resolution_clock::now();
